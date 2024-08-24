@@ -31,6 +31,9 @@
               fontFamily:{
                 Manrope:'Manrope',
               },
+              backgroundImage:{
+                formImage: "url('./images/bg.jpg')",
+              },
             },
           },
         }
@@ -41,7 +44,7 @@
     <header class="md:container mx-auto">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
-              <h6 class="bg-lime-500 p-3 rotate-45 rounded-full "><i class="fa-solid fa-arrow-up"></i></h6>
+              <h6 class="bg-lime-400 p-3 rotate-45 rounded-full w-10"><i class="fa-solid fa-arrow-up"></i></h6>
               <a class="text-2xl font-bold pl-5">Rinterio</a>
             </div>
             <div class="navbar-center hidden lg:flex">
@@ -56,9 +59,9 @@
             <div class="navbar-end flex space-x-5">
                 <h6><i class="fa-solid fa-magnifying-glass"></i></h6>
                 <h6><i class="fa-solid fa-cart-shopping"></i></h6>
-                <button class="btn btn-success">
+                <button class="btn bg-lime-400">
                     Book Consult
-                    <h6 class="bg-lime-500 p-3 rotate-45 rounded-full "><i class="fa-solid fa-arrow-up"></i></h6>
+                    <h6 class="bg-black text-white w-9 p-3 rotate-45 rounded-full w-11"><i class="fa-solid fa-arrow-up"></i></h6>
                   </button>
                   <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -96,8 +99,8 @@
           </div>
      </Section>
      <!-- About Section -->
-     <Section class="md:container mx-auto bg-base-200 ">
-        <div class="py-28 flex sm:flex-row flex-col items-center gap-12">
+     <Section class=" bg-base-200 w-full ">
+        <div class="md:container mx-auto py-28 flex sm:flex-row flex-col items-center gap-12">
             <div class="flex-1 ">
                 <div class="pb-5">
                     <img src="images/Vector.png" alt="">
@@ -117,7 +120,6 @@
                   <div><h3 class="text-xl font-bold">Commercial</h3>
                     <p>The barn house captivates with its blend of rustic charm and modern.</p>
                   </div>
-                  
                  </div>
                  <div class="flex justify-center bg-slate-50 p-5 rounded-2xl">
                     <img class="pr-3" src="images/residential.png" alt="">
@@ -193,12 +195,48 @@
           </div>
         </div>
       </section>
+      <!-- Latest Portfolio -->
+       <section class="md:container mx-auto mb-5">
+        <div class="text-center mt-8 mb-8">
+          <button class="btn bg-white">
+            <h6 class="bg-white text-black p-3 rotate-90 rounded-full "><i class="fa-solid fa-arrow-up"></i></h6>
+            How we works      
+           </button>
+          <h1 class="text-3xl md:text-4xl font-bold mb-5 font-manrope">
+            Our Featured Products
+          </h1>
+          <p class="text-gray-600 max-w-xl mx-auto">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable.
+          </p>
+        </div>
+        <div class="flex w-full gap-3">
+          <div class="card border-solid border-2 border-gray-300 rounded-box grid flex-grow place-items-center w-3/4">
+            <div class="flex flex-row justify-center items-center bg-slate-50 p-5 rounded-2xl mb-5">
+              <img class="pr-3" src="images/img1.png" alt="">
+              <div><h3 class="text-xl font-bold">Commercial</h3>
+                <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                <button class="btn bg-lime-200">
+                  <h6 class="text-black p-3 rotate-90 rounded-full "><i class="fa-solid fa-arrow-up"></i></h6>
+                  Let’s Connect      
+                 </button>
+              </div>
+             </div>
+          </div>
+          <div class="card bg-base-300 rounded-box grid h-20 flex-grow place-items-center w-1/4">content</div>
+        </div>
+          <div class="card bg-base-300 rounded-box grid h-20 flex-grow place-items-center w-1/4">content</div>
+        </div>
+        
+       </section>
       <!-- next Project -->
-            <section class="md:container mx-auto mb-5">
-              <div class="text-center mt-8 mb-8">
-                <button class="btn bg-white">
-                  <h6 class="bg-white text-black p-3 rotate-90 rounded-full "><i class="fa-solid fa-arrow-up"></i></h6>
-                  How we works      
+            <section class="w-full mb-5 bg-formImage bg-no-repeat bg-cover pt-5">
+              <div class=" md:container mx-auto text-center mt-8 mb-8">
+                <button class="btn bg-lime-200">
+                  <h6 class="text-black p-3 rotate-90 rounded-full "><i class="fa-solid fa-arrow-up"></i></h6>
+                  Let’s Connect      
                  </button>
                 <h1 class="text-3xl md:text-4xl font-bold mb-5 font-manrope">
                   Let’s Discuss Next Project
@@ -207,31 +245,31 @@
                   The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
                 </p>
               </div>
-              <div class="card w-full max-w-xl: ">
+              <div class="card mx-auto w-9/12">
                 <div class="card-body">
-                  <form>
-                    <div class="form-control flex flex-row gap-3 pb-5">
-                      <input type="text" id="name" placeholder="Your name" class="input input-bordered w-6/12" />
-                      <input type="text" id="name" placeholder="Your name" class="input input-bordered w-6/12" />
+                  <form class="">
+                    <div class="form-control flex flex-row gap-3 pb-5 ">
+                      <input type="text" id="name" placeholder="Your name" class="input input-bordered w-6/12 rounded-full" />
+                      <input type="text" id="name" placeholder="Your name" class="input input-bordered w-6/12 rounded-full" />
                     </div>
                     <div class="form-control flex flex-row gap-3">
-                      <input type="text" id="name" placeholder="Phone Number*" class="input input-bordered w-6/12" />
-                      <input type="text" id="name" placeholder="Email*" class="input input-bordered w-6/12" />
+                      <input type="text" id="name" placeholder="Phone Number*" class="input input-bordered w-6/12 rounded-full" />
+                      <input type="text" id="name" placeholder="Email*" class="input input-bordered w-6/12 rounded-full" />
                     </div>
                     <div class="form-control">
                       <label class="label" for="message">
                       </label>
-                      <textarea id="message" placeholder="Write your message here" class="textarea textarea-bordered h-60"></textarea>
+                      <textarea id="message" placeholder="Write your message here" class="textarea textarea-bordered h-60 rounded-3xl"></textarea>
                     </div>
-                    <div class="form-control mt-6">
-                      <button class="btn bg-lime-400">Send Message</button>
+                    <div class="form-control mt-6 ">
+                      <button class="btn bg-lime-400 rounded-3xl">Send Mail</button>
                     </div>
                   </form>
                 </div>
               </div>
                 </section>
       <!-- Footer section -->
-      <footer class="footer footer-center bg-base-200 text-base-content rounded p-10">
+      <footer class="footer footer-center bg-zinc-950 text-white text-base-content rounded p-10">
         <div class="flex">
           <h6 class="bg-lime-500 p-3 rotate-45 rounded-full "><i class="fa-solid fa-arrow-up"></i></h6>
           <a class="text-2xl font-bold pl-5">Rinterio</a>
